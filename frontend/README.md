@@ -1,30 +1,59 @@
-# React + TypeScript + Vite
+# Hope4All - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To get started, follow these steps to set up the frontend environment on your local machine.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Fork the Repository
 
-## Expanding the ESLint configuration
+Fork the hopeforall repository to your GitHub account.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 2. Clone the Repository
 
-- Configure the top-level `parserOptions` property like this:
+Clone the forked repository to your local machine using the following command:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/akash-singh8/hopeforall.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 3. Install pnpm
+
+Ensure you have `pnpm` installed globally. If not, run the following command:
+
+```bash
+npm install -g pnpm
+```
+
+### 4. Navigate to the Frontend Directory
+
+Change your current working directory to the frontend folder:
+
+```bash
+cd hopeforall/frontend
+```
+
+### 5. Install Dependencies
+
+Install project dependencies using `pnpm`:
+
+```bash
+pnpm install
+```
+
+### 6. Start the Development Server
+
+Start the development server to view the project locally:
+
+```bash
+pnpm run dev
+```
+
+This command will launch the development server, and you can view the application at `http://localhost:5173` in your browser.
+
+## Contributing
+
+Feel free to explore the codebase, fix bugs, and add new features! If you have any suggestions or improvements, open an issue or create a pull request.
+
+- To submit a pull request, make your changes, and submit a pull request against the `your-username` branch.
+
+Happy coding!
