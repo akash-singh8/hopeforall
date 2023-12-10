@@ -11,7 +11,8 @@
   "author": "Akash Singh",
   "license": "MIT",
   "dependencies": {
-    "@trpc/server": "^10.44.1"
+    "@trpc/server": "^10.44.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "nodemon": "^3.0.2",
