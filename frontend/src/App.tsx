@@ -1,13 +1,14 @@
 import Navbar from "./components/Navbar";
+import Home from "./components/home";
+import Footer from "./components/footer";
 import Hope4All from "./components/Hope4All";
 import Approach from "./components/Approach";
 function App() {
   return (
     <>
       <Navbar />
-
-      <h1 className=".nav">Hello Universe</h1>
-      <button>Hii</button>
+      <Home />
+      <Footer />
       <Hope4All/>
       <Approach/>
 
