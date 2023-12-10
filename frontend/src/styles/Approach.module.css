@@ -1,0 +1,49 @@
+.approach {
+    margin-left: 9%;
+    margin-right: 12%;
+    padding-top: 2%;
+    margin-top: 3%;
+    display: flex;
+    font-family: 'Arimo', sans-serif;
+}
+
+.approachHeading h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.approachHeading {
+    min-width: 50%;
+    padding-top: 2%;
+    margin-left: 1%;
+    margin-right: 5%;
+}
+
+.approachExplanation {
+    min-width: 50%;
+    margin-right: 5%;
+
+}
+
+.approachExplanation p {
+    color: grey;
+    font-size: larger;
+    text-align: left;
+}
+
+.astrikImage img {
+    height: 80px;
+    position: relative;
+    right: 50px;
+}
+
+.approachRow {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 12%;
+    padding-top: 2%;
+    display: flex;
+    font-family: 'Arimo', sans-serif;
+    justify-content: center;
+    gap: 20px;
+}

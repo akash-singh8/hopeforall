@@ -1,0 +1,44 @@
+.hopeheading {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hope4all {
+    margin-left: 9%;
+    margin-right: 12%;
+    padding-top: 2%;
+    display: flex;
+    font-family: 'Arimo', sans-serif;
+}
+
+.hopedescribe {
+    color: grey;
+    font-size: larger;
+    text-align: left;
+}
+
+.headingContainer {
+    min-width: 50%;
+    padding-top: 2%;
+    margin-left: 1%;
+    margin-right: 5%;
+}
+
+.descriptionContainer {
+    min-width: 50%;
+    margin-right: 5%;
+}
+
+.featuresRow {
+    margin-left: 10%;
+    margin-right: 12%;
+    padding-top: 2%;
+    display: flex;
+    font-family: 'Arimo', sans-serif;
+    justify-content: center;
+    gap: 20px;
+}
+
+.arrow {
+    margin-left: 50%;
+}
