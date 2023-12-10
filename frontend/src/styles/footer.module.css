@@ -1,0 +1,62 @@
+.footer {
+    width: 100%;
+    height: 300px;
+    background: #fb923c;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 98px;
+    align-items: center;
+}
+
+.cont {
+    display: grid;
+    grid-gap: 69px;
+}
+
+.logo_name {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.taglining {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav_links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: -59px;
+}
+
+.nav_links .ul .li {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 56px;
+}
+
+.nav_links .ul .li a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.nav_links .ul .li a:hover {
+    color: #e6e6e6;
+}
+
+.social_icons {
+    display: flex;
+
+}
+
+.icon {
+    width: 60px;
+    margin-left: 20px;
+}

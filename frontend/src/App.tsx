@@ -1,12 +1,13 @@
 import Navbar from "./components/Navbar";
+import Home from "./components/home";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <>
       <Navbar />
-
-      <h1 className=".nav">Hello Universe</h1>
-      <button>Hii</button>
+      <Home />
+      <Footer />
     </>
   );
 }

@@ -1,3 +1,64 @@
 .nav {
-  background-color: tan;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 98px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(251, 146, 60);
+  text-decoration: none;
+}
+
+.nav_links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-left: -59px;
+}
+
+.nav_links .ul .li {
+  font-size: 16px;
+  color: #747474;
+  font-weight: 400;
+  margin-left: 56px;
+}
+
+.nav_links .ul .li a {
+  text-decoration: none;
+  color: #747474;
+
+}
+
+.nav_links .ul .li a:hover {
+  color: #000;
+}
+
+.btn {
+  display: flex;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.donate_btn {
+  color: #fff;
+  font-size: 18.5px;
+  font-weight: 500;
+  padding: 15px 20px;
+  border-top-right-radius: 19px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 19px;
+  border-top-left-radius: 19px;
+  background: #fb923c;
+  border: 0;
+  width: 160px;
+  height: 60px;
+  cursor: pointer;
 }
