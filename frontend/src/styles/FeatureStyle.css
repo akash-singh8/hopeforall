@@ -1,0 +1,35 @@
+.feature-heading h1 {
+    font-size: 2.25rem;
+    font-weight: lighter;
+    font-family: 'Arimo', sans-serif;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+
+.feature-block {
+    background-color: rgb(230, 228, 228);
+    min-width: 33%;
+    max-width: 33%;
+    min-height: 350px;
+    border-radius: 15px;
+}
+
+.feature-description p {
+    font-size: 1.05rem;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: grey;
+    padding-left: 2%;
+}
+
+.feature-pic {
+    min-width: fit-content;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.feature-pic img {
+    height: 90px;
+
+}

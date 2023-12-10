@@ -1,0 +1,44 @@
+.approach-sub-heading h1 {
+    font-size: 2.25rem;
+    font-weight: lighter;
+    font-family: 'Arimo', sans-serif;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.approach-block {
+    background-color: rgb(230, 228, 228);
+    min-width: 33%;
+    max-width: 33%;
+    min-height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+    /* Hide content that exceeds the block */
+
+
+}
+
+.approach-description p {
+    font-size: 1.05rem;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: grey;
+    padding-left: 2%;
+}
+
+.approach-pic {
+    min-width: fit-content;
+    margin-left: 50px;
+    margin-top: 25px;
+    padding-right: 10%;
+    min-width: 250px;
+    position: relative;
+    right: 11%;
+}
+
+.approach-pic img {
+    height: 250px;
+    margin-right: 10px;
+}
