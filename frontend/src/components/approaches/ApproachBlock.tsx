@@ -1,15 +1,15 @@
 import React from 'react'
-import '../../styles/ApproachStyle.css';
+import style from '../../styles/ApproachBlock.module.css';
 function ApproachBlock(props) {
   return (
-    <div className='approach-block'>
-         <div className='approach-pic'>
+    <div className={style.approachBlock}>
+         <div className={style.approachPic}>
             <img src={props.pic}/>
         </div>
-        <div className='approach-sub-heading'>
+        <div className={style.approachSubHeading}>
            <h1 >{props.heading}</h1>
         </div>
-        <div className='approach-description'>
+        <div className={style.approachDescription}>
            <p>{props.description}</p>
         </div>
        

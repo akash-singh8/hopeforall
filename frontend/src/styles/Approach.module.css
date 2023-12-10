@@ -1,35 +1,44 @@
-.hopeheading {
-    font-size: 3.5rem;
-    font-weight: bold;
-}
-
-.hope4all {
+.approach {
     margin-left: 9%;
     margin-right: 12%;
     padding-top: 2%;
+    margin-top: 3%;
     display: flex;
     font-family: 'Arimo', sans-serif;
 }
 
-.hopedescribe {
-    color: grey;
-    font-size: larger;
-    text-align: left;
+.approachHeading h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
 }
 
-.heading-container {
+.approachHeading {
     min-width: 50%;
     padding-top: 2%;
     margin-left: 1%;
     margin-right: 5%;
 }
 
-.description-container {
+.approachExplanation {
     min-width: 50%;
     margin-right: 5%;
+
 }
 
-.features-row {
+.approachExplanation p {
+    color: grey;
+    font-size: larger;
+    text-align: left;
+}
+
+.astrikImage img {
+    height: 80px;
+    position: relative;
+    right: 50px;
+}
+
+.approachRow {
+    display: flex;
     margin-left: 10%;
     margin-right: 12%;
     padding-top: 2%;
@@ -37,8 +46,4 @@
     font-family: 'Arimo', sans-serif;
     justify-content: center;
     gap: 20px;
-}
-
-.arrow {
-    margin-left: 50%;
 }

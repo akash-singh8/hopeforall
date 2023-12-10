@@ -1,21 +1,21 @@
 import React from 'react'
-import '../styles/OurApproach.css';
+import style from '../styles/Approach.module.css';
 import ApproachBlock from './approaches/ApproachBlock';
 function Approach() {
   return (
    <>   
-   <div className='approach'>
-      <div className='approach-heading'>
+   <div className={style.approach}>
+      <div className={style.approachHeading}>
         <h1>Our Approach</h1>
       </div>
-      <div className='astrik-image'>
+      <div className={style.astrikImage}>
         <img src="https://landingsite-static-web-images.s3.us-east-2.amazonaws.com/template10/star.svg"/>
       </div>
-      <div className='approach-explanation'>
+      <div className={style.approachExplanation}>
         <p>With a focus on transparency, collaboration, and sustainability, we uphold a unique approach to aiding underprivileged communities.</p>
       </div>
    </div>
-   <div className='approach-row'>
+   <div className={style.approachRow}>
       <ApproachBlock 
                 heading='Transparency First'
                 description='We ensure you know where your money is going.'

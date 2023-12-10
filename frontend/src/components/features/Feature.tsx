@@ -1,17 +1,17 @@
 import React from 'react';
-import '../../styles/FeatureStyle.css';
+import style from '../../styles/Feature.module.css';
 
 function Feature(props) {
   
   return (
-    <div className='feature-block'>
-        <div className='feature-heading'>
+    <div className={style.featureBlock}>
+        <div className={style.featureHeading}>
            <h1 >{props.heading}</h1>
         </div>
-        <div className='feature-description'>
+        <div className={style.featureDescription}>
            <p>{props.description}</p>
         </div>
-        <div className='feature-pic'>
+        <div className={style.featurePic}>
             <img src={props.pic}/>
         </div>
     </div>
