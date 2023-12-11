@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,41 @@
 }
 
 body {
-  font-family: 'Arimo', sans-serif;
+  background-color: #faf8f4;
+  font-family: "Arimo", sans-serif;
   width: 100%;
-  background: #faf8f4;
+}
+
+a {
+  font-weight: 500;
+  color: #555555;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #6f6f6f;
+}
+
+button {
+  border-radius: 14px;
+  border: 1px solid transparent;
+  border-bottom-right-radius: 0;
+  padding: 0.8em 1.5em;
+  font-family: "Arimo", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(251, 146, 60);
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #dddddd;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }

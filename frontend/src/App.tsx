@@ -9,6 +9,7 @@ import type { AppRouter } from "../../backend/src/index.ts";
 import { createTRPCReact } from "@trpc/react-query";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { httpBatchLink } from "@trpc/client";
+import Contact from "./components/Contact.tsx";
 
 function App() {
   const trpc = createTRPCReact<AppRouter>();
@@ -31,6 +32,7 @@ function App() {
         <Home />
         <Hope4All />
         <Approach />
+        <Contact />
         <Footer />
       </QueryClientProvider>
     </trpc.Provider>
