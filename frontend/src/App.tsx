@@ -3,17 +3,14 @@ import Home from "./components/home";
 import Footer from "./components/footer";
 import Hope4All from "./components/Hope4All";
 import Approach from "./components/Approach";
-
-import { useState } from "react";
-import type { AppRouter } from "../../backend/src/index.ts";
-import { createTRPCReact } from "@trpc/react-query";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { httpBatchLink } from "@trpc/client";
 import Contact from "./components/Contact.tsx";
 
-function App() {
-  const trpc = createTRPCReact<AppRouter>();
+import { useState } from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { httpBatchLink } from "@trpc/client";
+import { trpc } from "./utils/trpc.ts";
 
+function App() {
   const [queryClient] = useState(() => new QueryClient());
   const [trpcClient] = useState(() =>
     trpc.createClient({
