@@ -1,5 +1,6 @@
 import { router, publicProcedure } from "./trpc";
 import { createHTTPServer } from "@trpc/server/adapters/standalone";
+import cors from "cors";
 
 const appRouter = router({
   hello: publicProcedure.query(() => {
@@ -10,6 +11,9 @@ const appRouter = router({
 export type AppRouter = typeof appRouter;
 
 const server = createHTTPServer({
+  middleware: cors({
+    origin: "http://localhost:5173",
+  }),
   router: appRouter,
 });
 
