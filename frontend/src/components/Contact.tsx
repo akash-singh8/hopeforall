@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={style.contact}>
+    <section id="contact" className={style.contact}>
       <img src={crowdfunding} alt="fundraise" />
 
       <form className={style.form} onSubmit={handleContact}>

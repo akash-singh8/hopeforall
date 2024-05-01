@@ -8,7 +8,7 @@ type FeatureProps = {
 
 function Feature(props: FeatureProps) {
   return (
-    <div className={styles.featureBlock}>
+    <div  className={styles.featureBlock}>
       <div className={styles.featureHeading}>
         <h1>{props.heading}</h1>
       </div>
@@ -25,7 +25,7 @@ function Feature(props: FeatureProps) {
 function Hope4All() {
   return (
     <>
-      <div className={styles.hope4all}>
+      <div id="about" className={styles.hope4all}>
         <div className={styles.headingContainer}>
           <h1 className={styles.hopeheading}>Why Hope4All?</h1>
         </div>
