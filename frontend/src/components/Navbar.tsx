@@ -1,4 +1,3 @@
-import React from "react";
 import style from "../styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -16,13 +15,16 @@ const Navbar = () => {
       <div className={style.nav_links}>
         <ul className={style.ul}>
           <li className={style.li}>
-            <a href="#about">About</a>
+            <a href="/about">About</a>
           </li>
           <li className={style.li}>
-            <a href="/about">Services</a>
+            <a href="/services">Services</a>
           </li>
           <li className={style.li}>
-            <a href="#contact" onClick={scrollToContact}>Contact</a> {/* Scroll to Contact */}
+            <a href="/contact" onClick={scrollToContact}>
+              Contact
+            </a>{" "}
+            {/* Scroll to Contact */}
           </li>
         </ul>
       </div>
