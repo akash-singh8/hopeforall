@@ -48,6 +48,20 @@ app.post("/raisefund", (req, res) => {
   res.json({ message: "Successfully listed to raise funds" });
 });
 
+app.get("/donors", async (req, res) => {
+  try {
+    const donors = await RaiseFund.find();
+    console.log("Donors:", donors);
+
+    res.json(donors);
+  } catch (error) {
+    console.error("Error finding donors:", error);
+    res
+      .status(500)
+      .json({ message: "Server side error, please try again later!" });
+  }
+});
+
 app.listen(3080, () => {
   console.log("Server listening at : http://localhost:3080");
 });
