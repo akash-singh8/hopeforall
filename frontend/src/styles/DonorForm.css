@@ -7,22 +7,32 @@
 .recipe_box {
     width: 100%;
     display: flex;
+    padding-bottom: 20px;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
+
+
 .boxer {
-    margin-top: 100px;
+    margin-top: 2rem;
     width: 440px;
     height: 594px;
     border: 0;
     border-radius: 8px;
     box-shadow: 0 0 10px #bebebe;
     padding: 20px 0px;
+    transition:transform 0.5s ease;
+}
+.boxer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    
 }
 
 .create_your_recipe {
     font-size: 25px;
-    color: #000;
+    color: orange;
     font-weight: 600;
     text-align: center;
 }
@@ -31,12 +41,12 @@
     display: grid;
     grid-gap: 16px;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 label {
     font-size: 16px;
-    color: #000;
+    color:orange;
     font-weight: 500;
 }
 
@@ -51,25 +61,31 @@ label {
 }
 
 .recipe_submit_btn {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 16px;
+    width: 50%;
+    margin-top: 5px;
+    padding-left: 70px;
+
+}
+.recipe_submit_btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 1s ease;
+ 
 }
 
 .recipe_submit {
-    width: 367px;
-    height: 45px;
+    width: 200px;
+    height: 40px;
     border: 0;
     border-radius: 5px;
     box-shadow: 0 0 10px #bebebe;
-    padding-left: 10px;
-    background: blue;
+    background:orange;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease;
+    
+   
 }
 
 .instr_img {
