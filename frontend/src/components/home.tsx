@@ -16,10 +16,10 @@ const home = () => {
             Through transparent and sustainable aid we make a difference.
           </p>
           <div className={style.learn_btn}>
-            <a href="/login">
+            <a href="/donor">
               <button className={style.start}>Donate Now</button>
             </a>
-            <a href="/login">
+            <a href="/donor">
               <button className={style.more_btn}>Learn More</button>
             </a>
           </div>

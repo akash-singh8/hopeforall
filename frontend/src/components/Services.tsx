@@ -9,6 +9,7 @@ interface TileProps {
   description: string;
   buttonText: string;
   onClick?: () => void; // Optional button click handler
+  link: string;
 }
 
 const Tile: React.FC<TileProps> = ({
@@ -17,13 +18,16 @@ const Tile: React.FC<TileProps> = ({
   description,
   buttonText,
   onClick,
+  link,
 }) => {
   return (
     <div className={styles.tile}>
       <img src={image} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>
-      <button onClick={onClick}>{buttonText}</button>
+      <a href={link}>
+        <button onClick={onClick}>{buttonText}</button>
+      </a>
     </div>
   );
 };
@@ -37,13 +41,15 @@ const Services: React.FC = () => {
         description="Stand with the needy. Show your humanity, lend your support"
         buttonText="Donate"
         onClick={() => console.log("Tile 1 button clicked!")} // Optional click handler
+        link={"/donor"}
       />
       <Tile
         image={img2} // Replace with your image path
         title="FundRaiser"
         description="Empower change. Take the first step by supporting yourself, then extend your hand to others in need"
         buttonText="RaiseFund"
-        onClick={() => console.log("Tile 2 button clicked!")} // Optional click handler
+        onClick={() => console.log("Tile 2 button clicked!")}
+        link={"/raise-fund"}
       />
     </div>
   );

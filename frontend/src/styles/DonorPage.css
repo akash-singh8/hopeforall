@@ -1,0 +1,119 @@
+.donoorpage {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.donorclass {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.donortitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.donorcards {
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+    grid-gap: 60px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #f9f9f9;
+}
+
+.bloodimage {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.profile {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+
+.donorPropfileimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.donorname {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    color: #988d8d;
+    margin-left: 7px;
+}
+
+.raised {
+    display: grid;
+    justify-content: flex-start;
+}
+
+.raisedamount {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.donorraised {
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.timeleft {
+    font-size: 14px;
+    margin-top: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.descrip {
+    padding: 15px 20px;
+}
+
+.urgent {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+}
+
+.linetime {
+    width: 155px;
+    height: 8px;
+    background: dodgerblue;
+    margin-top: 23px;
+    border-radius: 70px;
+    margin-bottom: 17px;
+}

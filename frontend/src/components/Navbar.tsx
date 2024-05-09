@@ -21,7 +21,7 @@ const Navbar = () => {
             <a href="/services">Services</a>
           </li>
           <li className={style.li}>
-            <a href="/contact" onClick={scrollToContact}>
+            <a href="" onClick={scrollToContact}>
               Contact
             </a>{" "}
             {/* Scroll to Contact */}
@@ -29,7 +29,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="btn">
-        <a href="/login">
+        <a href="/donor">
           <button className={style.donate_btn}>Donate Now</button>
         </a>
       </div>

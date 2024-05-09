@@ -7,17 +7,28 @@ import Contact from "./components/Contact";
 import Services from "./components/Services";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DonorPgae from "./components/DonorPgae";
+import DonorForm from "./components/DonorForm";
 
+function MainHome() {
+  return (
+    <>
+      <Home />
+      <Hope4All />
+      <Approach />
+      <Contact />
+    </>
+  );
+}
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hope4all" element={<Hope4All />} />
+        <Route path="/" element={<MainHome />} />
         <Route path="/Services" element={<Services />} />
-        <Route path="/approach" element={<Approach />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/donor" element={<DonorPgae />} />
+        <Route path="/raise-fund" element={<DonorForm />} />
       </Routes>
       <Footer />
     </Router>
