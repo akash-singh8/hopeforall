@@ -6,11 +6,11 @@ const DonorForm = () => {
       <div className="recipe_box" data-aos="fade-up">
         <div className="boxer" data-aos="fade-up">
           <h1 className="create_your_recipe" data-aos="fade-up">
-            Donate Now
+            FundRaiser Form
           </h1>
           <form className="create_form" data-aos="fade-up">
             <label htmlFor="" data-aos="fade-up">
-              Name
+              Title
             </label>
             <input
               type="text"
@@ -22,42 +22,54 @@ const DonorForm = () => {
               data-aos="fade-up"
             />
             <label htmlFor="" data-aos="fade-up">
-              Description
+              StartedBy
             </label>
             <input
               type="text"
-              name="description"
-              placeholder="Enter Description"
+              name="image"
+              placeholder="Enter name of event handler"
               className="reaipe_inputss"
-              onChange={(e) => setDescription(e.target.value)}
+              onChange={(e) => setUrl(e.target.value)}
               required
               data-aos="fade-up"
             />
+            
             <label htmlFor="" data-aos="fade-up">
-              Fund raised
+              AmountNeeded
             </label>
             <input
               type="text"
               name="ingredients"
-              placeholder="Enter Ingredients"
+              placeholder="Enter the target amount"
               className="reaipe_inputss"
               onChange={(e) => setIngredients(e.target.value)}
               required
               data-aos="fade-up"
             />
             <label htmlFor="" data-aos="fade-up">
-              Image URL
+              DaysLeft
             </label>
             <input
               type="text"
               name="image"
-              placeholder="Enter Image URL"
+              placeholder="Total length of event in days"
               className="reaipe_inputss"
               onChange={(e) => setUrl(e.target.value)}
               required
               data-aos="fade-up"
             />
-
+            <label htmlFor="" data-aos="fade-up">
+                Insert Image
+            </label>
+            <input
+              type="file"
+              name="Image"
+              placeholder="Image"
+              className="reaipe_inputss"
+              onChange={(e) => setDescription(e.target.value)}
+              required
+              data-aos="fade-up"
+            />
             <div className="recipe_submit_btn" data-aos="fade-up">
               <button
                 type="submit"
