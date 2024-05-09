@@ -9,20 +9,7 @@ import Services from "./components/Services";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  // const [queryClient] = useState(() => new QueryClient());
-  // const [trpcClient] = useState(() =>
-  //   trpc.createClient({
-  //     links: [
-  //       httpBatchLink({
-  //         url: "http://localhost:3000",
-  //       }),
-  //     ],
-  //   })
-  // );
-
   return (
-    // <trpc.Provider client={trpcClient} queryClient={queryClient}>
-    //   <QueryClientProvider client={queryClient}>
     <Router>
       <Navbar />
       <Routes>
@@ -34,8 +21,6 @@ function App() {
       </Routes>
       <Footer />
     </Router>
-    //   </QueryClientProvider>
-    // </trpc.Provider>
   );
 }
 
