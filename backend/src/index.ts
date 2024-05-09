@@ -2,6 +2,7 @@ import express from "express";
 import sendMail from "./controller/sendMail";
 import mongoose from "mongoose";
 import { config } from "dotenv";
+import cors from "cors";
 
 import RaiseFund from "./schema/raisefund";
 
@@ -10,6 +11,7 @@ const app = express();
 
 mongoose.connect(process.env.DB_URI!);
 
+app.use(cors());
 app.use(express.json());
 
 app.post("/contact", async (req, res) => {
@@ -17,7 +19,7 @@ app.post("/contact", async (req, res) => {
 
   try {
     await sendMail(email, { name, email, message });
-    res.json({ message: "Successfully Contacted" });
+    res.json({ message: "Successfully send the message!" });
   } catch (e) {
     console.log(e);
     res
