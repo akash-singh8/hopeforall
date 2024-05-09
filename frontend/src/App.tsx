@@ -20,6 +20,16 @@ function MainHome() {
     </>
   );
 }
+
+function About() {
+  return (
+    <>
+      <Hope4All />
+      <Approach />
+    </>
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -27,6 +37,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainHome />} />
         <Route path="/Services" element={<Services />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/donor" element={<DonorPgae />} />
         <Route path="/raise-fund" element={<DonorForm />} />
       </Routes>
