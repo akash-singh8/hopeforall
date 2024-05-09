@@ -1,8 +1,14 @@
 import express from "express";
 import sendMail from "./controller/sendMail";
+import mongoose from "mongoose";
 import { config } from "dotenv";
+
+import RaiseFund from "./schema/raisefund";
+
 config();
 const app = express();
+
+mongoose.connect(process.env.DB_URI!);
 
 app.use(express.json());
 
@@ -18,6 +24,28 @@ app.post("/contact", async (req, res) => {
       .status(500)
       .json({ message: "Server side error, please try again later!" });
   }
+});
+
+app.post("/raisefund", (req, res) => {
+  const { name, desc, fund_raised, image } = req.body;
+
+  const raiseFund = new RaiseFund({
+    name: name,
+    description: desc,
+    fundRaised: parseInt(fund_raised),
+    image: image,
+  });
+
+  raiseFund
+    .save()
+    .then((project: any) => {
+      console.log("Donor saved:", project);
+    })
+    .catch((error: any) => {
+      console.error("Error saving project:", error);
+    });
+
+  res.json({ message: "Successfully listed to raise funds" });
 });
 
 app.listen(3080, () => {
