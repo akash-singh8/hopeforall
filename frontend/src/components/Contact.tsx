@@ -2,14 +2,29 @@ import style from "../styles/Contact.module.css";
 import crowdfunding from "../assets/crowdfunding.png";
 
 const Contact = () => {
-  const handleContact = (e: any) => {
+  const handleContact = async (e: any) => {
     e.preventDefault();
 
     const name = document.getElementById("name") as HTMLInputElement;
     const email = document.getElementById("email") as HTMLInputElement;
     const message = document.getElementById("message") as HTMLInputElement;
 
-    alert("Successfully send the message!");
+    const res = await fetch("http://localhost:3080/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name.value,
+        email: email.value,
+        message: message.value,
+      }),
+    });
+
+    const data = await res.json();
+
+    alert(data.message);
+
     name.value = "";
     email.value = "";
     message.value = "";
@@ -19,7 +34,7 @@ const Contact = () => {
     <section id="contact" className={style.contact}>
       <img src={crowdfunding} alt="fundraise" />
 
-      <form className={style.form} onSubmit={handleContact}>
+      <form className={style.form}>
         <h1>Get in Touch With Us</h1>
         <div className={style.input_container}>
           <label htmlFor="name">Name</label>
@@ -36,7 +51,7 @@ const Contact = () => {
           <textarea id="message" required></textarea>
         </div>
 
-        <button type="submit">Send Message</button>
+        <button onClick={handleContact}>Send Message</button>
       </form>
     </section>
   );
