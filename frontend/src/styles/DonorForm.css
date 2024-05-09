@@ -1,0 +1,82 @@
+.containing {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recipe_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boxer {
+    margin-top: 100px;
+    width: 440px;
+    height: 594px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #bebebe;
+    padding: 20px 0px;
+}
+
+.create_your_recipe {
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.create_form {
+    display: grid;
+    grid-gap: 16px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+label {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+.reaipe_inputss {
+    width: 367px;
+    height: 45px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bebebe;
+    padding-left: 10px;
+    outline: none;
+}
+
+.recipe_submit_btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.recipe_submit {
+    width: 367px;
+    height: 45px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bebebe;
+    padding-left: 10px;
+    background: blue;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.instr_img {
+    margin-top: 140px;
+    width: 100%;
+}
+
+.recipe_instruction {
+    width: 610px;
+}
