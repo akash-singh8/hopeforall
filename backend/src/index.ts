@@ -1,28 +1,25 @@
-import { router, publicProcedure } from "./trpc";
-import { createHTTPServer } from "@trpc/server/adapters/standalone";
-import cors from "cors";
+import express from "express";
 import sendMail from "./controller/sendMail";
-import contactSchema from "./validation/contact";
+import { config } from "dotenv";
+config();
+const app = express();
 
-const appRouter = router({
-  hello: publicProcedure.query(() => {
-    return "Hello Universe";
-  }),
+app.use(express.json());
 
-  contact: publicProcedure.input(contactSchema).mutation(({ input }) => {
-    sendMail(process.env.CEO_EMAIL!, input);
+app.post("/contact", async (req, res) => {
+  const { name, email, message } = req.body;
 
-    return { message: "Successfully send the mail" };
-  }),
+  try {
+    await sendMail(email, { name, email, message });
+    res.json({ message: "Successfully Contacted" });
+  } catch (e) {
+    console.log(e);
+    res
+      .status(500)
+      .json({ message: "Server side error, please try again later!" });
+  }
 });
 
-export type AppRouter = typeof appRouter;
-
-const server = createHTTPServer({
-  middleware: cors({
-    origin: "http://localhost:5173",
-  }),
-  router: appRouter,
+app.listen(3080, () => {
+  console.log("Server listening at : http://localhost:3080");
 });
-
-server.listen(3000);
