@@ -8,7 +8,7 @@
   margin: 100px auto;
 }
 
-.contact > img {
+.contact>img {
   border-radius: 32px;
   border-top-right-radius: 0;
   object-fit: cover;
@@ -57,4 +57,16 @@ textarea {
   margin-top: 20px;
   margin-right: 10%;
   margin-left: auto;
+}
+
+label[for="name"] {
+  color: white;
+}
+
+label[for="email"] {
+  color: white;
+}
+
+label[for="message"] {
+  color: white;
 }
