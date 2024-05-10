@@ -19,7 +19,7 @@ const home = () => {
             <a href="/donor">
               <button className={style.start}>Donate Now</button>
             </a>
-            <a href="/donor">
+            <a href="/about">
               <button className={style.more_btn}>Learn More</button>
             </a>
           </div>
