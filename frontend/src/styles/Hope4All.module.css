@@ -44,19 +44,26 @@
 }
 
 .featureHeading h1 {
-  font-size: 2.25rem;
-  font-weight: lighter;
+  font-size: 2rem;
+  font-weight: bold;
+  color: orange;
   font-family: "Arimo", sans-serif;
   margin-top: 10%;
   margin-left: 10%;
 }
-
 .featureBlock {
   background-color: rgb(230, 228, 228);
   min-width: 33%;
   max-width: 33%;
   min-height: 350px;
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgb(15, 15, 15); /* Add orange box shadow */
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.featureBlock:hover {
+  box-shadow: 0 8px 16px 0 orange; /* Increase shadow on hover */
+  transform: scale(1.05); /* Add scale effect on hover */
 }
 
 .featureDescription p {
